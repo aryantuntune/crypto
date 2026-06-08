@@ -1,0 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #app { height: 100%; margin: 0; }
+body { background: #0b0d10; color: #e6e8eb; font-family: ui-sans-serif, system-ui, sans-serif; }

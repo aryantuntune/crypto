@@ -1,0 +1,21 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "Capability for the main window",
+  "windows": ["main"],
+  "permissions": [
+    "core:default",
+    "opener:default",
+    "dialog:allow-open",
+    "fs:allow-read-file",
+    "fs:allow-read-text-file",
+    "fs:allow-read-dir",
+    {
+      "identifier": "fs:scope",
+      "allow": [
+        { "path": "$HOME/CogniTrade/library" },
+        { "path": "$HOME/CogniTrade/library/**" }
+      ]
+    }
+  ]
+}

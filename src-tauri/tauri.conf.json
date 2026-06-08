@@ -1,0 +1,58 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "CogniTrade",
+  "version": "0.1.0",
+  "identifier": "com.cognitrade.app",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../build"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "CogniTrade",
+        "width": 420,
+        "height": 800,
+        "resizable": true,
+        "decorations": false,
+        "transparent": false,
+        "visible": false,
+        "alwaysOnTop": true,
+        "skipTaskbar": true
+      }
+    ],
+    "trayIcon": {
+      "iconPath": "icons/icon.png"
+    },
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["nsis", "msi"],
+    "publisher": "CogniTrade",
+    "category": "Finance",
+    "shortDescription": "Advisory crypto chart analyst",
+    "longDescription": "CogniTrade is an advisory cryptocurrency chart analyst. Drop in a chart screenshot and it reads the chart, retrieves relevant passages from your ingested trading documents (RAG), and returns a plain-English analysis with a structured recommendation. It places no trades; you stay in full control.",
+    "copyright": "Copyright © 2026 CogniTrade",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "windows": {
+      "webviewInstallMode": {
+        "type": "downloadBootstrapper"
+      },
+      "nsis": {
+        "installMode": "currentUser"
+      }
+    }
+  }
+}

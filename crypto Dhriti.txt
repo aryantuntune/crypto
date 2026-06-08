@@ -1,0 +1,40 @@
+You are an expert quantitative trading system architect and AI engineer with deep experience in automated cryptocurrency trading, machine learning, retrieval‑augmented generation (RAG), and risk management.
+
+I need you to produce a **comprehensive, real‑world project plan** for building an automated crypto trading bot system called **CogniTrade**. The system must run on my desktop PC (specs: Ryzen 3400G, 8GB RAM, 1TB storage, 450W PSU, Gigabyte motherboard). It will trade live on cryptocurrency exchanges (e.g., Binance, Kraken) and must include the following features:
+
+1. **Market data & chart reading** – The bot can read live price graphs, candlestick charts, and technical indicators (RSI, MACD, Bollinger Bands, etc.) to understand current market state.
+
+2. **Self‑learning / strategy improvement** – The bot must improve its trading strategies over time by ingesting and implementing knowledge from:
+   - PDF trading books, research papers, and market reports that I provide.
+   - A **Retrieval‑Augmented Generation (RAG)** pipeline that allows the bot to “remember” and apply concepts from those documents when making decisions.
+
+3. **Suggestions before every trade** – Before any trade is executed, the bot sends me a detailed suggestion with:
+   - Clear action (buy / sell / hold).
+   - Quantity & limit price.
+   - A **plain‑English explanation** of why this trade is likely profitable, based on:
+        * Technical analysis (chart patterns, indicators).
+        * Retrieved knowledge from my research documents.
+        * Probabilistic reasoning (e.g., “Based on the last 100 similar patterns, price has a 72% chance of moving up 3% before hitting your stop‑loss.”).
+   - Valid reasoning for stop‑loss and take‑profit levels.
+
+4. **Fixed stop‑loss and take‑profit** – I can set a fixed stop‑loss percentage and take‑profit percentage per trade, and the bot must enforce them without exception.
+
+5. **Run continuously on my PC** – The system must be designed to run 24/7 on my modest desktop hardware (8GB RAM is a hard constraint). Include optimisation strategies for low memory usage and CPU efficiency.
+
+**Your task** – Write a complete, actionable project document that includes:
+
+- A deep research section: identify **real problems** with building such a system on limited hardware, with live market data, with AI self‑learning, etc. For each problem, give a **practical, tested solution**.
+- A **step‑by‑step implementation roadmap** (phases, weeks, tasks) from setup to live trading.
+- Detailed technical architecture: modules, data flow, how RAG + Minimax decision engine work together.
+- How to train the bot: exactly how to feed it PDFs / research papers, chunk them, embed them, and retrieve relevant knowledge during trading.
+- How the bot reads graphs and charts – both numerical (indicators) and visual (candlestick images).
+- How the bot calculates probabilities (“the graph will go up or down”) using historical pattern recognition and retrieved research.
+- The pre‑trade approval workflow (how I get suggestions, review them, and approve/reject).
+- Risk management framework – hard SL/TP, position sizing, max drawdown protection.
+- Hardware analysis: what my PC can actually handle, what upgrades are critical (RAM, SSD), and what must be offloaded to a VPS or cloud.
+- Performance metrics (KPIs) to measure success.
+- A realistic “go‑live” checklist.
+
+**Output format** – A well‑structured, professional document (like a project whitepaper or implementation guide). Use headings, subheadings, bullet points, tables, and code snippets where helpful. Assume I am technically capable but need clear, actionable instructions. The tone should be practical and focused on real‑world success, not theoretical perfection.
+
+Write this document now.
