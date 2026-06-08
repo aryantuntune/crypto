@@ -1,5 +1,8 @@
 # CogniTrade
 
+> 📌 **Continuing the build?** Start with [`STATUS.md`](STATUS.md) — it records exactly where
+> the project stands and the single remaining step to produce the Windows installer.
+
 CogniTrade is an **advisory crypto-chart analyst** — a local-first desktop app built on
 **Tauri 2** with a **SvelteKit/TypeScript** frontend (Svelte 5 + Tailwind 3 + Vite 6, static
 SPA) and a **Rust** backend. Windows is the primary platform, and the whole thing is designed
